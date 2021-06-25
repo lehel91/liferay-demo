@@ -1,0 +1,4 @@
+Bundle-Name: content-lister
+Bundle-SymbolicName: hu.webtown.content.lister.portlet
+Bundle-Version: 1.0.0
+Export-Package: hu.webtown.content.lister.portlet.constants

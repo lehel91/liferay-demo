@@ -1,0 +1,10 @@
+Bundle-Name: invention-ideas-service-api
+Bundle-SymbolicName: hu.webtown.liferay.invention.ideas.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	hu.webtown.liferay.invention.ideas.exception,\
+	hu.webtown.liferay.invention.ideas.model,\
+	hu.webtown.liferay.invention.ideas.service,\
+	hu.webtown.liferay.invention.ideas.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../invention-ideas-service-service/service.xml

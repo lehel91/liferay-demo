@@ -1,0 +1,12 @@
+dependencies {
+	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib"
+	compileOnly group: "com.liferay", name: "com.liferay.portal.spring.extender.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly project(":modules:invention-ideas-service:invention-ideas-service-api")
+}
+
+buildService {
+	apiDir = "../invention-ideas-service-api/src/main/java"
+}
+
+group = "hu.webtown.liferay.invention.ideas"

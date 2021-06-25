@@ -1,0 +1,4 @@
+Bundle-Name: rest-demo-module
+Bundle-SymbolicName: rest.demo.module
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration
