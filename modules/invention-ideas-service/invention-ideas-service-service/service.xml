@@ -1,21 +1,19 @@
 <?xml version="1.0"?>
-<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
 
 <service-builder package-path="hu.webtown.liferay.invention.ideas">
-	<namespace>LR_DEMO</namespace>
-	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
-	<entity local-service="true" name="Foo" remote-service="true" uuid="true">
+	<author>lehel</author>
+	<namespace>le_demo</namespace>
+	
+	<entity local-service="true" name="InventionIdeaInstance" remote-service="false" uuid="true">
 
 		<!-- PK fields -->
-
-		<column name="inventionIdeaId" primary="true" type="long" />
+		<column name="id" primary="true" type="long" />
 
 		<!-- Group instance -->
-
 		<column name="groupId" type="long" />
 
 		<!-- Audit fields -->
-
 		<column name="companyId" type="long" />
 		<column name="userId" type="long" />
 		<column name="userName" type="String" />
@@ -23,28 +21,23 @@
 		<column name="modifiedDate" type="Date" />
 
 		<!-- Other fields -->
-
-		<column name="field1" type="String" />
-		<column name="field2" type="boolean" />
-		<column name="field3" type="int" />
-		<column name="field4" type="Date" />
-		<column name="field5" type="String" />
+		<column name="name" type="String" />
+		<column name="inventorName" type="String" />
+		<column name="shortDescription" type="String" />
+		<column name="description" type="String" />
 
 		<!-- Order -->
-
 		<order by="asc">
-			<order-column name="field1" />
+			<order-column name="name" />
 		</order>
 
 		<!-- Finder methods -->
-
-		<finder name="Field2" return-type="Collection">
-			<finder-column name="field2" />
+		<finder name="Name" return-type="Collection">
+			<finder-column name="name" />
 		</finder>
-
-		<!-- References -->
-
-		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
-		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+		
+		<finder name="InventorName" return-type="Collection">
+			<finder-column name="inventorName" />
+		</finder>
 	</entity>
 </service-builder>
