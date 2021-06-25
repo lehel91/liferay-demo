@@ -8,5 +8,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 >
 	<bean class="hu.webtown.liferay.invention.ideas.service.impl.InventionIdeaInstanceLocalServiceImpl" id="hu.webtown.liferay.invention.ideas.service.InventionIdeaInstanceLocalService" />
+	<bean class="hu.webtown.liferay.invention.ideas.service.impl.InventionIdeaInstanceServiceImpl" id="hu.webtown.liferay.invention.ideas.service.InventionIdeaInstanceService" />
 	<bean class="hu.webtown.liferay.invention.ideas.service.persistence.impl.InventionIdeaInstancePersistenceImpl" id="hu.webtown.liferay.invention.ideas.service.persistence.InventionIdeaInstancePersistence" parent="basePersistence" />
 </beans>

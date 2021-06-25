@@ -5,7 +5,7 @@
 	<author>lehel</author>
 	<namespace>le_demo</namespace>
 	
-	<entity local-service="true" name="InventionIdeaInstance" remote-service="false" uuid="true">
+	<entity local-service="true" name="InventionIdeaInstance" remote-service="true" uuid="true">
 
 		<!-- PK fields -->
 		<column name="id" primary="true" type="long" />
